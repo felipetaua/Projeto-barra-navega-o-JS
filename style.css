@@ -98,7 +98,7 @@ header{
         right: 0;
         width: 100vw;
         background: black;
-        transition: 0.5s;
+        transition: height 0.5s cubic-bezier(0.4,0,0.2,1);
         overflow: hidden;
     }
     .nav-bar ul{
@@ -106,8 +106,14 @@ header{
         width: fit-content;
         margin: 80px auto 0 auto;
         text-align: center;
-        transition: 0.5s;
+        transition: opacity 0.5s;
         opacity: 0;
+    }
+    .nav-bar.ativo{
+        height: 450px;
+    }
+    .nav-bar.ativo ul{
+        opacity: 1;
     }
     .nav-bar ul li a{
         margin-bottom: 12px;
